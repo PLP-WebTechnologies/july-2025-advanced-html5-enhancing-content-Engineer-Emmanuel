@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple HTML5 Form Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 1rem; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+    fieldset { border: 1px solid #999; padding: 1rem; margin-bottom: 1rem; }
+    label { display: block; margin-top: 0.5rem; }
+    input, select, textarea { width: 100%; padding: 0.4rem; margin-top: 0.2rem; box-sizing: border-box; }
+    input[type="submit"] { width: auto; padding: 0.6rem 1.2rem; margin-top: 1rem; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<h1>Simple HTML5 Content and Form</h1>
+
+<section id="List">
+  <h2>Key Features List</h2>
+  <ol type="1">
+    <li>Use of semantic HTML5 elements
+        <ul>
+            <li>Enhancing SEO by helping search engines understand content structure</li>
+            <li>Improving accessibility for assistive technologies</li>
+            <li>Making code clearer and easier to maintain.</li>
+        </ul>
+    </li>
+    <li>Basic list and table</li>
+    <li>Embedded image media</li>
+    <li>HTML5 form with validation</li>
+</ol>
+</section>
+
+<section id="Table">
+  <h2>Sample Table</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Day</th>
+        <th>Topic</th>
+    </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>Web Development</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>Python</td>
+      </tr>
+      <tr>
+         <td>Wednesday</td>
+         <td>Forms</td></tr>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>Database Management</td>
+      </tr>
+      <tr>
+         <td>Friday</td>
+         <td>Startup building</td>
+      </tr>
+
+    </tbody>
+  </table>
+</section>
+
+<section id="Media">
+  <h2>Media Example</h2>
+  <img src="images/Screenshot 2025-06-26 083609.png"alt="An aspiring happy software developer" width="300" height="200" />
+  <video width="300" height="200" controls>
+    <source src="images/e79749737a1e2ce9d2efc071b4523ccf_1739294827087.mp4" type="video/mp4" />
+  </video>
+  <Audio width="300" height="50" controls>
+    <source  src="images/Fireboy DML_ Asake - Bandana (Official Video)(M4A_128K).m4a" type="audio/mpeg" />
+  </Audio>
+</section>
+
+<section id="Forms">
+  <h2>Registration Form</h2>
+  <form action="Forms" method="post" novalidate>
+    <fieldset>
+
+      <legend>Personal Info</legend>
+      <label for="name">Full Name <sup>*</sup> </label>
+      <input type="text" id="name" name="name" required minlength="3" placeholder="John Doe" autocomplete="name"/>
+      <label for="email">Email <sup>*</sup></label>
+      <input type="email" id="email" name="email" required placeholder="example@email.com" autocomplete="email"/>
+
+    </fieldset>
+
+    <fieldset>
+
+      <legend>Account</legend>
+      <label for="username">Username <sup>*</sup></label>
+      <input type="text" id="username" name="username" required minlength="5" pattern="^[a-zA-Z0-9_]+$" title="Letters, numbers, and underscores only" placeholder="user123" autocomplete="username"/>
+      <label for="password">Password <sup>*</sup></label>
+      <input type="password" id="password" name="password" required minlength="8" placeholder="Enter password" autocomplete="new-password"/>
+      
+    </fieldset>
+
+    <input type="submit" value="Submit" />
+  </form>
+</section>
+
+</body>
+</html>
